@@ -570,7 +570,7 @@ p {
 }
 
 .design-bg {
-  background-image: radial-gradient(100% 100% at 50% 0%, rgba(193, 255, 127, 0.1) 0%, rgba(141, 216, 61, 0.1) 100%), url("/assets/img/designBg.jpg");
+  background-image: radial-gradient(100% 100% at 50% 0%, rgba(193, 255, 127, 0.1) 0%, rgba(141, 216, 61, 0.1) 100%), url("assets/img/designBg.jpg");
   background-repeat: no-repeat;
   min-height: 480px;
   background-size: cover;
