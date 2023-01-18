@@ -507,8 +507,8 @@ p {
 }
 
 .exclusive-wrap {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 23, 23, 0.5))), url("/assets/img/exclusiveBg.jpg");
-  background-image: linear-gradient(rgba(23, 23, 23, 0.5)), url("/assets/img/exclusiveBg.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 23, 23, 0.5))), url("../assets/img/exclusiveBg.jpg");
+  background-image: linear-gradient(rgba(23, 23, 23, 0.5)), url("../assets/img/exclusiveBg.jpg");
   min-height: 880px;
   background-size: cover;
 }
