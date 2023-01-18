@@ -1,0 +1,51 @@
+.footer
+  padding-top: 58px
+  min-height: 200px
+  &-title
+    font-size: 18px
+    line-height: 1.2
+    color: $colorBtn
+    text-transform: capitalize
+  &-list
+    padding-top: 35px
+    padding-bottom: 50px
+    display: flex
+    flex-direction: column
+    gap: 15px
+    &-s
+      padding-top: 35px
+      padding-bottom: 50px
+  &-item
+    color: $colorWh
+    font-size: 14px
+    line-height: 1.2
+    transition: .9s
+    &:hover
+      color: $colorBtn
+      font-size: 20px
+    &__social
+      color: $colorBtn
+      font-size: 20px
+      transition: 0.5s
+      &:hover
+        color: $colorWh
+        font-size: 30px
+.line
+  color: $colorBtn
+  display: none !important
+.active_active
+  transform: scale(1, -1)
+  // top: 0px
+
+@media screen and (max-width: 992px)
+  .footer-list
+    display: none
+  .footer-title.active + .footer-list
+    display: flex
+  .line
+    display: inline-block !important
+@media screen and (max-width: 576px)
+  .footer-title
+    padding-top: 15px
+  .footer-list-s
+    padding-top: 15px

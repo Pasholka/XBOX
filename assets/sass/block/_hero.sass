@@ -1,0 +1,102 @@
+.slider-wrapper
+  width: 100%
+  height: 100%
+  max-height: 650px
+  min-height: 648px
+  position: relative
+.container-fluid
+  padding: 0
+.slick
+  &-track
+    display: flex
+  &-list
+    overflow: hidden
+  &-arrow
+    position: absolute
+    // top: 50%
+    bottom: 50%
+    transform: translate(0, -50%)
+    // margin: -15px
+    z-index: 10
+    font-size: 0px
+  &-prev
+    right: 60px
+    background-image: url('../assets/img/icon-next.png') !important
+    width: 30px
+    height: 30px
+    border: none
+    background: no-repeat
+  &-next
+    left: 60px
+    background-image: url('../assets/img/icon-prev.png') !important
+    background: no-repeat
+    width: 30px
+    height: 30px
+    border: none
+  &-dots
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 10px
+    position: relative
+    z-index: 10
+    margin-top: -43px
+    & button
+      font-size: 0px
+      width: 10px
+      height: 10px
+      background-color: #8DD83D
+      border-radius: 50%
+      border: none
+  &-active
+    & button
+      background: transparent
+      border: solid #8DD83D 1px
+.slider
+  &_wrap
+    margin-top: -435px
+    padding-left: 10px
+  &_title
+    font-size: 36px
+    line-height: 1.2
+    color: $colorWh
+  &_subtitle
+    font-size: 24px
+    line-height: 1.2
+    color: $colorWh
+  &-img
+    width: 100%
+    height: 100%
+    max-height: 645px
+    min-height: 645px
+    object-fit: cover
+  &-wrapp
+    &__button
+      margin-top: -330px
+      padding-left: 10px
+.button
+  font-size: 16px
+  line-height: 1.4
+  color: $colorWh
+  text-transform: capitalize
+  // transform: transition(0.5s)
+  transition: 1.5s
+  &-watch
+    padding: 8px 20px
+    background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%)
+    border-radius: 4px
+  &-games
+    padding: 8px 20px
+    background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%)
+    border-radius: 4px
+  &:hover
+    background: $colorBtn
+    color: $colorWh
+
+@media screen and ( max-width: 500px )
+  .slider-wrapper .slick-prev
+    top: 260px
+    right: 10px
+  .slider-wrapper .slick-next
+    top: 260px
+    left: 20px

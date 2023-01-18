@@ -1,0 +1,89 @@
+.presentation
+  &-title
+    padding-top: 100px
+  &-button
+    padding: 15px 20px
+    background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%)
+    border-radius: 4px
+    text-transform: capitalize
+    color: $colorWh
+    transition: .5s
+    &:hover
+      background: $colorBtn
+      color: $colorWh
+  &-wrapper
+    padding-top: 210px
+    padding-bottom: 110px
+  &-video
+    position: relative
+    width: 100%
+    max-width: 890px
+    object-fit: cover
+    border-radius: 5px
+    min-height: 560px
+  &-preview
+    position: relative
+    padding-bottom: 100px
+.play
+  position: absolute
+  top: 0px
+  bottom: 0px
+  margin: auto auto
+  right: 0px
+  left: 0px
+  font-size: 100px
+    /* border: none; */
+  color: #fff
+    /* background: inherit; */
+  width: 100px
+  height: 100px
+  &:hover
+    color: $colorBtn
+.life
+  padding-bottom: 100px
+
+.answers
+  padding-bottom: 105px
+
+.game
+  &-title
+    font-size: 36px
+    line-height: 1.2
+    color: $colorGame
+    text-transform: capitalize
+  &-img
+    width: 100%
+    border-radius: 5px
+
+.technical
+  padding-bottom: 110px
+  &-title
+    padding-bottom: 50px
+  &-item
+    font-size: 21px
+    line-height: 1.2
+    color: $colorGame
+  &-button
+    padding-top: 80px
+  &-btn
+    font-size: 18px
+    line-height: 1.4
+    color: #fff
+    text-transform: capitalize
+    transition: .5s
+    background: #686C6F
+    padding: 15px 55px
+    border-radius: 5px
+    &:hover
+      background: $colorBtn
+      color: $colorWh
+@media screen and ( max-width: 992px )
+  .game
+    &-img
+      padding-top: 30px
+  .technical-wrap-list
+    display: none
+  .act
+    display: flex
+.active_active_active
+  transform: scale(1, -1)

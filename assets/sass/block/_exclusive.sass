@@ -1,0 +1,112 @@
+.exclusive
+  &-wrapper
+    // background-image: url('../assets/img/exclusiveBg.jpg')
+    // background-repeat: no-repeat
+    position: relative
+  &-bg
+    width: 100%
+    // height: 100%
+    min-height: 800px
+    position: absolute
+    object-fit: cover
+  &-text
+    position: relative
+    // background: rgba(23, 23, 23, 0.5)
+    padding-top: 100px
+  &-title
+    color: $colorWh
+  &-card
+    background-color: $colorWh
+    opacity: 0.8
+    filter: alpha(opacity=50)
+    transition: .9s
+    margin-top: 55px
+    margin-bottom: 70px
+    border-radius: 5px
+    &:hover
+      transform: scale(1.1)
+      opacity: 0.9
+    &__img
+      // width: 320px
+      // height: 180px
+    &__text
+      padding-top: 20px
+      padding-right: 10px
+      padding-left: 10px
+      padding-bottom: 30px
+    &__title
+      padding-top: 20px
+      font-size: 21px
+      line-height: 1.2
+    &__game
+      font-size: 18px
+      line-height: 1.2
+    &__link
+      color: $colorWh
+      display: inline-block
+      margin-top: 15px
+      &:hover
+        // background: red
+        color: $colorWh
+      &__bl
+        background-color: $colorBtn
+        min-height: 50px
+        text-align: center
+        margin-top: 45px
+        border-radius: 5px
+        &:hover
+          background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%)
+          color: $colorBtn
+  &__img
+    width: 100%
+    height: 100%
+    object-fit: contain
+    border-radius: 5px
+  &-button
+    position: relative
+    // background: $colorBtn
+    padding: 20px 50px
+  &-wrap
+    background-image: linear-gradient(rgba(23, 23, 23, 0.5)), url('/assets/img/exclusiveBg.jpg')
+    min-height: 880px
+    background-size: cover
+.ex-card .slick-track
+  display: flex
+  gap: 40px
+.ex-card .slick-list
+  overflow: hidden
+.ex-card .slick-arrow
+  position: absolute
+    // top: 50%
+  bottom: 50%
+  transform: translate(0, -50%)
+    // margin: -15px
+  z-index: 10
+  font-size: 0px
+
+.ex-card .slick-prev
+  right: 60px
+  background-image: url('../assets/img/icon-next.png') !important
+  width: 20px
+  height: 20px
+  border: none
+  background: no-repeat
+  top: 115px
+.ex-card .slick-next
+  left: 60px
+  background-image: url('../assets/img/icon-prev.png') !important
+  width: 20px
+  height: 20px
+  border: none
+  background: no-repeat
+  top: 115px
+
+.exclusive-title br
+  display: none
+@media screen and ( max-width: 500px )
+  .ex-card .slick-next
+    left: 15px
+  .ex-card .slick-prev
+    right: 15px
+  .exclusive-title br
+    display: block
