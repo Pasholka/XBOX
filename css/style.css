@@ -131,6 +131,7 @@ p {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
+  border-radius: 5px;
 }
 
 .user-item {
@@ -168,6 +169,7 @@ p {
   min-width: 100px;
   min-height: 50px;
   text-transform: capitalize;
+  border-radius: 5px;
 }
 
 .games-item {
