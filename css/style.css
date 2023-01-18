@@ -412,6 +412,14 @@ p {
   background-color: #435766;
   color: #fff;
 }
+@media screen and ( max-width: 992px )
+  .value {
+    padding-bottom: 50px;
+}
+  .value-card
+      margin-bottom: 10px
+}
+
 
 .exclusive-wrapper {
   position: relative;
